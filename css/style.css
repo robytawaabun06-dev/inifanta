@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Fanta Pop';
+    src: url('/fanta_regular_by_pependejo-dbvx61f.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+:root {
+    --orange: #ff8800;
+    --white: #ffffff;
+}
+
+.text-orange {
+    color: var(--orange) !important;
+}
+
+.btn-orange {
+    background: var(--white);
+    color: var(--orange);
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-orange:hover {
+    background: #ff6600;
+    color: var(--white);
+}
+
+.home-img {
+    max-width: 350px;
+}
+
+.footer-gradient {
+    background: var(--orange);
+}
+
+footer h5, footer p, footer small {
+    color: #fff !important;
+}
+
+footer .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    footer .row {
+        grid-template-columns: 1fr;
+    }
+    .home-img {
+        max-width: 250px;
+    }
+}
+
+#product video {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: var(--orange) !important;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #e0e308 !important;
+}
+
+.navbar-brand img {
+    height: 32px;
+    width: auto;
+    max-width: 100px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'Fanta Pop', 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+}
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
